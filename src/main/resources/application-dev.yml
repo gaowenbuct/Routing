@@ -9,9 +9,15 @@ eureka:
       defaultZone: http://localhost:8761/eureka/
 zuul:
   routes:
-    api-main:
-      path: /api/main/**
-      serviceId: service-main
+    api-system:
+      path: /api/system/**
+      serviceId: service-system
     api-order:
       path: /api/order/**
       serviceId: service-order
+    api-logistic:
+      path: /api/logistic/**
+      serviceId: service-logistic
+    api-finance:
+      path: /api/finance/**
+      serviceId: service-finance
